@@ -1,1 +1,1 @@
-Summervacation
+SummerVacation
