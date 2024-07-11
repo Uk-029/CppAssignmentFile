@@ -1,7 +1,7 @@
 #include <iostream>
 #define MAIN 5
 
-#if MAIN == 1										// º¯¼ö ¼±¾ğ ¹æ½Ä (C¿Í µ¿ÀÏ)
+#if MAIN == 1										// ë³€ìˆ˜ ì„ ì–¸ ë°©ì‹ (Cì™€ ë™ì¼)
 
 int main() {
 	int i;
@@ -10,7 +10,7 @@ int main() {
 	float f;
 }
 
-#elif MAIN == 2										// ¹è¿­ÀÌ³ª Æ÷ÀÎÅÍ¸¦ Á¤ÀÇÇÏ´Â ¹æ½Ä (C¿Í µ¿ÀÏ)
+#elif MAIN == 2										// ë°°ì—´ì´ë‚˜ í¬ì¸í„°ë¥¼ ì •ì˜í•˜ëŠ” ë°©ì‹ (Cì™€ ë™ì¼)
 
 int main() {
 	int arr[10];
@@ -19,69 +19,69 @@ int main() {
 	int* pi = &i;
 }
 
-#elif MAIN == 3										// for¹® (C¿Í µ¿ÀÏ)
+#elif MAIN == 3										// forë¬¸ (Cì™€ ë™ì¼)
 
 int main() {
 	int i;
 	for (i = 0; i < 10; i++) {
 		std::cout << i << std::endl;
 	}
-													// 0~9±îÁö ¼ö ³ª¿­
+											// 0~9ê¹Œì§€ ìˆ˜ ë‚˜ì—´
 	int sum = 0;
 	for (i = 1; i <= 10; i++) {
 		sum += i;
 	}
-	std::cout << "ÇÕÀº : " << sum << std::endl;
-													// 0~10±îÁöÀÇ ¼ö ÃÑÇÕ
+	std::cout << "í•©ì€ : " << sum << std::endl;
+											// 0~10ê¹Œì§€ì˜ ìˆ˜ ì´í•©
 }
 
-#elif MAIN == 4										// while¹® ¹× if - else¹® (C¿Í µ¿ÀÏ)
+#elif MAIN == 4										// whileë¬¸ ë° if - elseë¬¸ (Cì™€ ë™ì¼)
 
 int main() {
 	int lucky_number = 7;
-	std::cout << "³» ºñ¹Ğ ¼ö¸¦ ¸ÂÃß¾î º¸¼¼¿ä~" << std::endl;
+	std::cout << "ë‚´ ë¹„ë°€ ìˆ˜ë¥¼ ë§ì¶”ì–´ ë³´ì„¸ìš”~" << std::endl;
 
 	int user_input;
 
 	while (1) {
-		std::cout << "ÀÔ·Â : ";
-		std::cin >> user_input;						// cin : C¿¡¼­ÀÇ scanf (%c, %d µî ÀÚ·áÇü ±¸ºĞÀ» ÇÒ ÇÊ¿ä ¾øÀ½)
+		std::cout << "ì…ë ¥ : ";
+		std::cin >> user_input;							// cin : Cì—ì„œì˜ scanf (%c, %d ë“± ìë£Œí˜• êµ¬ë¶„ì„ í•  í•„ìš” ì—†ìŒ)
 		if (lucky_number == user_input) {
-			std::cout << "¸ÂÃß¼Ì½À´Ï´Ù~~" << std::endl;
+			std::cout << "ë§ì¶”ì…¨ìŠµë‹ˆë‹¤~~" << std::endl;
 			break;
 		}
 		else {
-			std::cout << "´Ù½Ã »ı°¢ÇØº¸¼¼¿ä~" << std::endl;
+			std::cout << "ë‹¤ì‹œ ìƒê°í•´ë³´ì„¸ìš”~" << std::endl;
 		}
   }
 }
 
-#elif MAIN == 5										// switch¹® (C¿Í µ¿ÀÏ)
+#elif MAIN == 5										// switchë¬¸ (Cì™€ ë™ì¼)
 
 int main() {
 	int user_input;
-	std::cout << "ÀÎÀû »çÇ×À» ¿­¶÷ÇÕ´Ï´Ù.(1~3»çÀÌÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À.)" << std::endl;
-	std::cout << "1. ÀÌ¸§ " << std::endl;
-	std::cout << "2. ¼ºº° " << std::endl;
-	std::cout << "3. ¼Ò¼Ó " << std::endl;
-	std::cout << "ÀÔ·Â : ";
+	std::cout << "ì¸ì  ì‚¬í•­ì„ ì—´ëŒí•©ë‹ˆë‹¤.(1~3ì‚¬ì´ì˜ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤.)" << std::endl;
+	std::cout << "1. ì´ë¦„ " << std::endl;
+	std::cout << "2. ì„±ë³„ " << std::endl;
+	std::cout << "3. ì†Œì† " << std::endl;
+	std::cout << "ì…ë ¥ : ";
 	std::cin >> user_input;
 
 	switch (user_input) {
 	case 1:
-		std::cout << "ÀüÁ¤¿í" << std::endl;
+		std::cout << "ì „ì •ìš±" << std::endl;
 		break;
 
 	case 2:
-		std::cout << "³²¼º" << std::endl;
+		std::cout << "ë‚¨ì„±" << std::endl;
 		break;
 
 	case 3:
-		std::cout << "ÇÑ±¹°øÇĞ´ëÇĞ±³" << std::endl;
+		std::cout << "í•œêµ­ê³µí•™ëŒ€í•™êµ" << std::endl;
 		break;
 
 	default:
-		std::cout << "Àß¸øµÈ ¹øÈ£ÀÔ´Ï´Ù." << std::endl;
+		std::cout << "ì˜ëª»ëœ ë²ˆí˜¸ì…ë‹ˆë‹¤." << std::endl;
 		break;
 	}
 }
